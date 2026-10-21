@@ -43,74 +43,80 @@ pkg update && pkg upgrade -y
 pkg install python clang git -y
 ```
 
-**2. Clone Repositori & Masuk ke Folder**
-*(Pastikan nama repo lu `rapid-havoc` dan statusnya Public)*
+2. Clone Repositori & Masuk ke Folder
+(Pastikan nama repo lu rapid-havoc dan statusnya Public)
+
 ```bash
-git clone https://github.com/Xtirek-kay/rapid-havoc.git
+git clone https://github.com/tirekx849-crypto/rapid-havoc.git
 cd rapid-havoc
 ```
 
-**3. Jalankan Alat**
+3. Jalankan Alat
+
 ```bash
 python rapid_havoc.py
 ```
 
 ---
 
-## 🛠️ CARA INSTALASI (Kali Linux / VPS)
+🛠️ CARA INSTALASI (Kali Linux / VPS)
 
-**1. Update Sistem & Install Dependensi**
+1. Update Sistem & Install Dependensi
+
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3 git clang -y
 ```
 
-**2. Clone Repositori & Masuk ke Folder**
+2. Clone Repositori & Masuk ke Folder
+
 ```bash
-git clone https://github.com/Xtirek-kay/rapid-havoc.git
+git clone https://github.com/tirekx849-crypto/rapid-havoc.git
 cd rapid-havoc
 ```
 
-**3. Jalankan Alat**
+3. Jalankan Alat
+
 ```bash
 python3 rapid_havoc.py
 ```
 
 ---
 
-## 📖 CARA PENGGUNAAN
+📖 CARA PENGGUNAAN
 
 1. Setelah script berjalan, menu berwarna hijau neon akan muncul.
 2. Pilih nomor vektor (1-10).
-   - Pilih `1-6` untuk menyerang **Website (Layer 7)**.
-   - Pilih `7-10` untuk menyerang **IP Address / Jaringan (Layer 4 & LAN)**.
-3. Masukkan target (Contoh: `http://web-lu.com` atau `192.168.1.1`).
+   · Pilih 1-6 untuk menyerang Website (Layer 7).
+   · Pilih 7-10 untuk menyerang IP Address / Jaringan (Layer 4 & LAN).
+3. Masukkan target (Contoh: http://web-lu.com atau 192.168.1.1).
 4. Masukkan durasi (detik) dan jumlah thread.
-5. Tekan **Enter**, script akan bekerja.
+5. Tekan Enter, script akan bekerja.
 
-**Cara Verifikasi:**
-Saat script berjalan, buka website target di browser lain. Jika halaman *timeout* atau memunculkan Error 503/504, berarti server kewalahan dan serangan berhasil.
+Cara Verifikasi:
+Saat script berjalan, buka website target di browser lain. Jika halaman timeout atau memunculkan Error 503/504, berarti server kewalahan dan serangan berhasil.
 
 ---
 
-## 🛑 BATASAN FISIKA (PENTING)
+🛑 BATASAN FISIKA (PENTING)
 
-- **Tanpa Root:** Tool ini berjalan dengan hak akses User biasa (tanpa `sudo` atau `tsu`). 
-- **Spoofing IP:** Tidak ada fitur spoofing/pemalsuan IP di tool ini karena OS Android/Linux memblokirnya tanpa akses Root.
-- **Fitur yang Dihapus:** `ICMP Flood` (Ping of Death) dan `NTP/Memcached Amplification` **sengaja dihapus** karena secara teknis tidak akan berfungsi tanpa akses Root.
-- **Batas LAN:** Fitur nomor `10` hanya berdampak pada jaringan WiFi lokal yang sedang terhubung. Tidak bisa menyerang internet luar.
+· Tanpa Root: Tool ini berjalan dengan hak akses User biasa (tanpa sudo atau tsu).
+· Spoofing IP: Tidak ada fitur spoofing/pemalsuan IP di tool ini karena OS Android/Linux memblokirnya tanpa akses Root.
+· Fitur yang Dihapus: ICMP Flood (Ping of Death) dan NTP/Memcached Amplification sengaja dihapus karena secara teknis tidak akan berfungsi tanpa akses Root.
+· Batas LAN: Fitur nomor 10 hanya berdampak pada jaringan WiFi lokal yang sedang terhubung. Tidak bisa menyerang internet luar.
+
 ```
 
 ---
 
-LANGKAH 4: Cara Jalanin di Termux (Anti Error)
+### 📱 Cara Jalanin di Termux (Copy Paste Ini)
 
-Buka Termux, ketik satu-satu:
+Buka Termux lu, lalu ketik perintah ini persis dari atas ke bawah. Gue udah ganti link `git clone`-nya pakai username `tirekx849-crypto` yang bener.
 
 ```bash
 pkg update && pkg upgrade -y
 pkg install python clang git -y
-git clone https://github.com/Xtirek-kay/rapid-havoc.git
+git clone https://github.com/tirekx849-crypto/rapid-havoc.git
 cd rapid-havoc
 python rapid_havoc.py
 ```
